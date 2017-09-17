@@ -1,0 +1,19 @@
+{
+  "name": "punchr",
+  "version": "0.0.1",
+  "description": "The world needs another day planner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bajax",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "debug": "^3.0.1",
+    "morgan": "^1.8.2"
+  }
+}
