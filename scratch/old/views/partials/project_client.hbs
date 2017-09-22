@@ -1,0 +1,28 @@
+<input>
+	<div class='edit-proejct'>
+		<span>
+			<label>
+				Project: ({{project_name}})
+					<select>
+						<option value={{project_name}}>{{project_name}}</option>
+						{{#projects}}
+							<option value={{.}}>{{.}}</option>
+						{{/projects}}
+					</select>
+			</label>
+		</span>
+
+		<span>
+			{{client_name}}
+		</span>
+		<span>
+			{{project_name}}
+		</span>
+		<span>
+			{{direction}}
+		</span>
+		<span>
+			{{type}}
+		</span>
+	</div>
+</input>

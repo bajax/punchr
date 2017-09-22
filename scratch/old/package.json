@@ -1,0 +1,26 @@
+{
+  "name": "punchr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^2.2.0",
+    "express": "^4.12.3",
+    "express4-handlebars": "^0.2.0",
+    "open": "0.0.5",
+    "sequelize": "^2.1.0",
+    "sqlite3": "^3.0.5"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

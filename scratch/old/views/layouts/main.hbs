@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8"> 
+	<title>{{title}}</title>
+	<style>
+		html
+		{
+			font-size : 15pt;
+		}
+		body
+		{
+			background  : rgb(55,160,215);
+			color       : rgb(35,35,0);
+			font-family : verdana;
+			margin      : 0;
+		}
+
+		h1, h2, h3, h4, h5
+		{
+			font-family      : 'Courier New';
+			margin           : 0;
+			/*padding-bottom : 10px;*/
+		}
+
+		h1
+		{
+			padding-left : .4rem;
+			padding-top  : .3rem;
+			font-size    : 2rem;
+		}
+
+		form.punchr_form
+		{
+			width       : 12rem;
+			display     : inline-block;
+			line-height : .9rem;
+			padding     : .7rem;
+			box-sizing  : border-box;
+		}
+
+			form.punchr_form>label
+			{	
+				width       : 100%;
+				border      : 0;
+				padding     : .15rem;
+				margin      : .1rem 0 0 0;
+				font-size   : .65rem;
+				font-family : sans-serif;
+				display     : inline-block;
+			}
+
+			form.punchr_form input, form.punchr_form textarea,  form.punchr_form select
+			{
+				width       : 100%;
+				border      : 0;
+				padding     : .15rem;
+				margin      : .1rem 0 0 0;
+				box-sizing  : border-box;
+				font-size   : .80rem;
+				font-family : verdana;
+				resize      : none;
+				display     : block;
+			}
+
+			form.punchr_form>textarea
+			{
+				height: 5rem;
+			}
+	</style>
+</head>
+<body>
+	<h1>
+		{{title}}
+	</h1>
+	{{{body}}}
+	</body>
+</html>

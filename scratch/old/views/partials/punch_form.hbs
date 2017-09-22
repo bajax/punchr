@@ -1,0 +1,42 @@
+<form class="punch_form punchr_form" method="POST">
+
+	<label for="time_stamp">Time:<label>
+	<input type="text" name="time_stamp" value="{{timeFormat time_stamp}}">
+
+	<label for="client_name">Client:</label>
+	<select name="client_name">
+		<option>Client...</option>
+		{{#eachWithSchema 'CLIENT_NAME' client_name}}
+			<option value="{{value}}" {{tickSelected value selected_value}}>{{display_name}}</option>
+		{{/eachWithSchema}}
+	</select>
+
+	<label for="project_name">Project:<label>	
+	<select name="project_name">
+		<option>Project...</option>
+		{{#eachWithSchema 'PROJECT_NAME' project_name}}
+			<option value="{{value}}" {{tickSelected value selected_value}}>{{display_name}}</option>
+		{{/eachWithSchema}}
+	</select>
+
+	<label for="direction">Punch:<label>	
+	<select name="direction">
+		<option>Direction...</option>
+		{{#eachWithSchema 'DIRECTION' direction}}
+			<option value="{{value}}" {{tickSelected value selected_value}}>{{display_name}}</option>
+		{{/eachWithSchema}}
+	</select>
+
+	<label for="type">Type:<label>
+	<select name="type">
+		<option>Type...</option>
+		{{#eachWithSchema 'TYPE' type}}
+			<option value="{{value}}" {{tickSelected value selected_value}}>{{display_name}}</option>
+		{{/eachWithSchema}}
+	</select>
+
+	<label for="comment">Comment:</label>
+	<textarea name="comment">{{comment}}</textarea>
+
+	<input type="submit" value="Punch it">
+</form>
